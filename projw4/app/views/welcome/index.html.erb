@@ -1,9 +1,31 @@
-<h1> Welcome to Faust Furniture</h1>
-<h2>Categories Available:</h2>
+<section class="jumbotron text-center" >
+    <div class="container">
+        <h1> Welcome to Faust Furniture</h1>
+       
+<div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select an option</label>
+            </div>
+            <select name="convert[category]" id="convert_category"class="custom-select" id="inputGroupSelect01">
+                <option selected >Categories...</option>
+                <option value="all">All </option>
+                <option value= "bedroom" >Bedroom</option>
+                <option value="desk">Desk</option>
+                <option value="miscellaneous">Miscellaneous</option>
+                <option value="seating">Seating</option>
+                <option value="tables">Tables</option>
 
-<%= link_to 'All furnitures Availabel', products_path %><br>
+            </select>
+        </div>
 
-<%=image_tag ("hero.jpg"),{:style => "height:35vw;width:60vw;margin-left:200px;margin-top:65px;"}%>
+        <%= link_to 'Enter', products_path(:value) %> <br>
+        
+        
+        
+</div>
+
+<%=image_tag ("hero.jpg"),{:style => "height:35vw;width:70vw;margin-left:100px;margin-top:15px;"}%>
+
+  </section>
 
 
 
